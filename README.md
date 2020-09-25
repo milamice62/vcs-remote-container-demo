@@ -14,6 +14,10 @@ Check Docker:
 ```
 
 docker --version
-> # Docker version 19.03.12, build 48a66213fe
+# Docker version 19.03.12, build 48a66213fe
 ```
+
+## Use Case Study
+### Open existing folder in a container
+
 
