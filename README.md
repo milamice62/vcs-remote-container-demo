@@ -24,7 +24,7 @@ Steps:
 1. Clone repo locally
 2. Run **Remote-Containers: Open Folder in Container** command from Command Palette (F1)
 3. Initiate starting point (.devcontainer/devcontainer.json) for dev container via:
-    > Dockerfile (Preferred if existed)
+    > Dockerfile (Preferred if existed)  
     > Filterable List
 4. Building and starting dev container
     > bind mount local filesystem into dev container
