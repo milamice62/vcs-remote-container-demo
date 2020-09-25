@@ -15,7 +15,7 @@ RUN sudo addgroup -S gouser && sudo adduser -S gouser -G gouser
 # Copy compiled executable from previous stage
 WORKDIR /app
 COPY --from=builder /go/src/goapp .
-
+# Run app
 EXPOSE 8080
 USER gouser
 ENTRYPOINT [ "./goapp" ]
