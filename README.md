@@ -51,11 +51,11 @@ docker --version
         ```
         "docker.host":"ssh://your-remote-user@your-remote-machine-fqdn-or-ip-here"
         ```  
-        
+
     Method 2: Local environment variables, including:  
-        > DOCKER_HOST  
-        > DOCKER_CERT_PATH (**required for tcp**)  
-        > DOCKER_TLS_VERIFY (**required for tcp**)
+    > DOCKER_HOST  
+    > DOCKER_CERT_PATH (**required for tcp**)  
+    > DOCKER_TLS_VERIFY (**required for tcp**)
 
 2. Initiate starting point (.devcontainer/devcontainer.json) for dev container via:
     > Dockerfile (*Preferred in most cases*)  
