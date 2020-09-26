@@ -51,6 +51,7 @@ docker --version
         ```
         "docker.host":"ssh://your-remote-user@your-remote-machine-fqdn-or-ip-here"
         ```  
+        
     Method 2: Local environment variables, including:  
         > DOCKER_HOST  
         > DOCKER_CERT_PATH (**required for tcp**)  
@@ -60,7 +61,7 @@ docker --version
     > Dockerfile (*Preferred in most cases*)  
     > Filterable List (*Recommended for this demo*)
 
-3. Covert dev container file to define the workspace/source code mount:
+3. Covert dev container file to define the workspace/source code mount:  
     *Option 1*: Volume mount
 
     > Use this option if you do **NOT** have login access to the remote host
