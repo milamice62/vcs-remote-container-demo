@@ -47,11 +47,11 @@ docker --version
 **Steps:**
 1. Establish connection between VSC and remote Docker host via 2 different methods:
  
-    Method 1: VS Code setting - *docker.host* property in *setting.json*
+    Method 1: VS Code setting - *docker.host* property in *setting.json*  
         ```
         "docker.host":"ssh://your-remote-user@your-remote-machine-fqdn-or-ip-here"
-        ```
-    Method 2: Local environment variables, including:
+        ```  
+    Method 2: Local environment variables, including:  
         > DOCKER_HOST  
         > DOCKER_CERT_PATH (**required for tcp**)  
         > DOCKER_TLS_VERIFY (**required for tcp**)
@@ -59,7 +59,7 @@ docker --version
 2. Initiate starting point (.devcontainer/devcontainer.json) for dev container via:
     > Dockerfile (*Preferred in most cases*)  
     > Filterable List (*Recommended for this demo*)
-    
+
 3. Covert dev container file to define the workspace/source code mount:
     *Option 1*: Volume mount
 
