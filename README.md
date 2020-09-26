@@ -45,7 +45,7 @@ docker --version
 ### Case 3: Deploy dev container to remote docker host
 
 **Steps:**
-1. Establish connection between VSC and remote Docker host via 2 different methods:
+1. Establish connection between VSC and remote Docker host via 3 different methods:
  
     Method 1: VS Code setting - *docker.host* property in *setting.json*
     ```
@@ -56,6 +56,24 @@ docker --version
     > DOCKER_HOST  
     > DOCKER_CERT_PATH (**required for tcp**)  
     > DOCKER_TLS_VERIFY (**required for tcp**)
+
+    Method 3: Docker Machine: 
+    
+    > **For installation, please refer to** [docker-machine](https://docs.docker.com/machine/)
+
+    **macOS or Linux:**
+
+    ```
+    eval $(docker-machine env give-it-a-name-here)
+    code
+    ```
+
+    **Windows PowerShell:**
+
+    ```
+    docker-machine env give-it-a-name-here | Invoke-Expression
+    code
+    ```
 
 2. Initiate starting point (.devcontainer/devcontainer.json) for dev container via:
     > Dockerfile (*Preferred in most cases*)  
