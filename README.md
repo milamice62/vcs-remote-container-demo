@@ -62,6 +62,7 @@ docker --version
     > Filterable List (*Recommended for this demo*)
 
 3. Covert dev container file to define the workspace/source code mount:  
+    
     *Option 1*: Volume mount
 
     > Use this option if you do **NOT** have login access to the remote host
