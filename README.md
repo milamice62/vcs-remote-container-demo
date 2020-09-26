@@ -41,3 +41,33 @@ docker --version
     > Filterable List (*Recommended for this demo*)
 4. Building and starting dev container
     > local/isolated docker volume attached to dev container
+
+### Case 3: Deploy dev container to remote docker host
+
+**Steps:**
+1. Establish connection between VSC and remote Docker host via 2 different methods: 
+    - VS Code setting - *docker.host* property in *setting.json*
+        ```
+        "docker.host":"ssh://your-remote-user@your-remote-machine-fqdn-or-ip-here"
+        ```
+    - Local environment variables, including:
+        > DOCKER_HOST
+        > DOCKER_CERT_PATH (**required for tcp**)
+        > DOCKER_TLS_VERIFY (**required for tcp**)
+2. Initiate starting point (.devcontainer/devcontainer.json) for dev container via:
+    > Dockerfile (*Preferred in most cases*)  
+    > Filterable List (*Recommended for this demo*)
+3. Covert dev container file to define the workspace/source code mount:
+    - Volume mount
+    > Use this option if you do **NOT** have login access to the remote host
+    ```
+    "workspaceMount": "source=remote-workspace,target=/workspace,type=volume"
+    "workspaceFolder": "/workspace",
+    ```
+    - Filesystem bind mount
+    > If you **DO** have login access to remote host, this method is available for adopt
+    ```
+    "workspaceMount": "source=/absolute/path/on/remote/machine,target=/workspace,type=bind,consistency=cached"
+    "workspaceFolder": "/workspace",
+    ```
+4. Building and starting dev container
