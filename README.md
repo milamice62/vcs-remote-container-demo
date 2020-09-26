@@ -36,3 +36,8 @@ docker --version
 2. Enter valid repository URL which includes:
     - PR URL
     - Branch URL
+3. Initiate starting point (.devcontainer/devcontainer.json) for dev container via:
+    > Dockerfile (*Preferred in most cases*)  
+    > Filterable List (*Recommended for this demo*)
+4. Building and starting dev container
+    > local/isolated docker volume attached to dev container
