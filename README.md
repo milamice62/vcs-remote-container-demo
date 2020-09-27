@@ -57,7 +57,7 @@ docker --version
     > DOCKER_CERT_PATH (**required for tcp**)  
     > DOCKER_TLS_VERIFY (**required for tcp**)
 
-    Method 3: Docker Machine: 
+    Method 3: Docker Machine:
     
     > **For installation, please refer to** [docker-machine](https://docs.docker.com/machine/)
 
@@ -96,3 +96,6 @@ docker --version
     "workspaceFolder": "/workspace",
     ```
 4. Building and starting dev container
+
+5. Git clone repo URL (**ONLY** if volume mount *Option 1* used in step 3)
+
