@@ -1,5 +1,5 @@
 # The Docker image to run your workspace in. Defaults to gitpod/workspace-full
-image: node:alpine
+image: golang
 
 # Reference a Dockerfile next to your .gitpod.yml file
 # Note: Currently, Gitpod only supports Debian/Ubuntu or Alpine based images.
@@ -7,11 +7,12 @@ image: node:alpine
 #   file: .gitpod.Dockerfile
 
 # Command to start on workspace startup (optional)
-# tasks:
-#   # Init task should only be executed after a workspace was freshly cloned
-#   # but not when restarting or starting a snapshot of that workspace.
-#   - init: go build -o goapp
-#     command: ./goapp
+tasks:
+  # Init task should only be executed after a workspace was freshly cloned
+  # but not when restarting or starting a snapshot of that workspace.
+  - init: go build -o goapp
+    command: ./goapp
+    
 # Ports to expose on workspace startup (optional)
 ports:
   - port: 8080
