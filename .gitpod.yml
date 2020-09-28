@@ -1,5 +1,5 @@
 # The Docker image to run your workspace in. Defaults to gitpod/workspace-full
-image: golang:alpine
+image: node:alpine
 
 # Reference a Dockerfile next to your .gitpod.yml file
 # Note: Currently, Gitpod only supports Debian/Ubuntu or Alpine based images.
