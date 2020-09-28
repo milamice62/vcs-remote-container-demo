@@ -103,4 +103,4 @@ docker --version
 
 File **.gitpod.yml** is declared to customize workspace configuration
 
-Please refer to [HERE](https://www.gitpod.io/docs/workspaces/) for official document
+Please refer to [webpage](https://www.gitpod.io/docs/workspaces/) for official document
