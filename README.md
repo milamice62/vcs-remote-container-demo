@@ -99,3 +99,8 @@ docker --version
 
 5. Git clone repo URL (**ONLY** if volume mount *Option 1* used in step 3)
 
+# Dev Workstation Demostration: Gitpod Wordspace
+
+File **.gitpod.yml** is declared to customize workspace configuration
+
+Please refer to [HERE](https://www.gitpod.io/docs/workspaces/) for official document
