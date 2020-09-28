@@ -1,3 +1,4 @@
+---
 # The Docker image to run your workspace in. Defaults to gitpod/workspace-full
 image: gitpod/workspace-full
 
@@ -22,5 +23,5 @@ ports:
 vscode:
   extensions:
     - golang.go@0.16.2
-#     - scala-lang.scala@0.3.9:O5XmjwY5Gz+0oDZAmqneJw==
-#     - scalameta.metals@1.9.0:KNju0fLBpNiyqH8qBfFeIQ==
+    - eg2.vscode-npm-script@0.3.11:Np1+d2YoqckGfeIuPylSEw==#     - scala-lang.scala@0.3.9:O5XmjwY5Gz+0oDZAmqneJw==
+    - golang.go@0.16.2:KwEZ/3KscWWNBDyu17+5lw==#     - scalameta.metals@1.9.0:KNju0fLBpNiyqH8qBfFeIQ==
