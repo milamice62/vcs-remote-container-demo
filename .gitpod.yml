@@ -21,6 +21,6 @@ ports:
 # Extensions will be installed as listed here
 vscode:
   extensions:
-    - go@0.16.2
+    - golang.go@0.16.2
 #     - scala-lang.scala@0.3.9:O5XmjwY5Gz+0oDZAmqneJw==
 #     - scalameta.metals@1.9.0:KNju0fLBpNiyqH8qBfFeIQ==
